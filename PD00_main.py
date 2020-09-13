@@ -102,10 +102,9 @@ mtcarsDF
 #condition
 mtcarsDF['gear'] == 3  #T&F
 mtcars[mtcarsDF['gear'] == 3]  #rows with T for gear=3
-mtcars[mtcarsDF['gear'] != 3]['gear','am']]
+mtcars[mtcarsDF['gear'] != 3],['gear','am']] #error
 
 #another way
-mtcarsDF[mtcarsDF.gear.eq(3)]  #chaining method
 
 mtcarsDF[mtcarsDF['gear'] == 3 & mtcarsDF['am']== 0]
 
@@ -143,7 +142,8 @@ mtcarsDF['wt'][mtcarsDF['gear'] == 4]
 mtcarsDF['wt'][mtcarsDF['gear'] == 4].sum()  #sum of wt of 4 gear cars
 mtcarsDF['gear'].value_counts()
 mtcarsDF[mtcars['hp'] > 150].gear.value_counts()
-mtcarsDF['mpg'].unique()
+
+mtcarsDF['mpg'].unique()    
 mtcarsDF['mpg'].nunique()# how many non-null unique values
 mtcarsDF['mpg'].count()
 #other stats functions - count, sum, mean, mad, median, min, max, mode, abs, prod, std, var, sem, skew, kurt, quantile, cumsum, cumprod, cummax, cummin, describe
