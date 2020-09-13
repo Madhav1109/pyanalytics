@@ -223,7 +223,7 @@ sns.pairplot(iris)  #relationship diagrams
 
 #%% #Load Inbuilt Datasets
 
-#pip install pydataset
+# pip install pydataset
 from pydataset import data
 data('iris')
 data('mtcars')
@@ -257,7 +257,7 @@ data2a
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
 data2b
-data2b = pd.read_csv('E:/analytics/projects/pyanalytics/mtcars.csv')
+data2b = pd.read_csv('C:/analytics/projects/pyanalytics/mtcars.csv')
 data2b
 #csv in any other location - full path
 data2b
@@ -271,3 +271,35 @@ data2c.head()
 
 #end here....
 #now practise numpy and pandas....
+
+
+import numpy
+numpy.array([10,20,30])
+list1=[10,20,'30',40]
+numpy.array([list1])
+
+import numpy as np
+np1 = np.arange(1,10)
+np1
+x=np.arange(1,1000,2)
+x
+x[1:100:3]
+np.sort(x)[::-1]
+reversed(x)
+x
+np2 = np.array([['1','2','3','4'],['5','6','7','8'],['9','10','11','12']])
+np2
+np2.shape
+np2.reshape(-2,1)
+np2.shape
+np2
+
+import pandas as pd
+pd1=pd.DataFrame({'roll no':[1,2,3,4,5],'name':['Dheeraj','Raj','Ram','Shyam','Pam'],'marks':[40,50,20,78,99],'Gender':['M','M','M','M','F']})
+pd1.describe()
+pd1.groupby('Gender').size()
+import matplotlib.pyplot as plt
+pd1.groupby('Gender').size()
+pd1.groupby('Gender').size().plot(kind='bar')
+
+plt.hist(df1['marks'])
