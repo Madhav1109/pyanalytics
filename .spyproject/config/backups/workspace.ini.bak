@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['LM00_main.py', 'DT00_main.py', 'DT_mtcars_cls_regr.py', 'CT00_main.py', 'clustring_practice.py']
+recent_files = ['LM00_main.py', 'DT00_main.py', 'DT_mtcars_cls_regr.py', 'CT00_main.py', 'clustring_practice.py', '..\\..\\..\\Users\\madha\\.spyder-py3\\autosave\\CT00_main.py', 'PLT00_main.py', 'AR01_I1I2I3.py']
 
